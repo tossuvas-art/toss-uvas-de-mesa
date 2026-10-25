@@ -1,83 +1,223 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Toss Uvas de Mesa — conheça nossa produção de uvas de mesa em São Luiz da Sexta Légua, Caxias do Sul, Serra Gaúcha.">
-<title>Toss Uvas de Mesa | Um local para conhecer</title>
-<style>
-:root{--green:#263d32;--cream:#f6f3eb;--gold:#b79b69;--ink:#202720;--muted:#687268}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit}
-header{position:absolute;top:0;left:0;right:0;z-index:2;padding:22px clamp(20px,6vw,84px);display:flex;align-items:center;justify-content:space-between;color:white}
-.brand{font-size:1.05rem;letter-spacing:.17em;font-weight:700;text-transform:uppercase}
-.brand span{display:block;font-size:.68rem;letter-spacing:.28em;font-weight:400;margin-top:2px}
-nav a{text-decoration:none;font-size:.9rem;margin-left:24px}
-.hero{min-height:78vh;display:flex;align-items:flex-end;position:relative;color:white;background:linear-gradient(90deg,rgba(18,32,24,.72),rgba(18,32,24,.18)),linear-gradient(0deg,rgba(18,32,24,.48),transparent 65%),url('https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vXkY2TOKi2_GSiq7SwfgoRTzYJviINoXGMZnIX_ZXgNOHgCDRXXxS39rs_kz1-8hgH0DF0EZ6opXakJGeKgL-1NoxmKz8dLN0FO2QsfkDxsrHgJwHizp7X80AYDOHvtJrxV9tONalS5Wnk95nDWDXFpoU5wJiNT_XGvaO1fvUyNZkFqaARVO_dndFfES3FFWp4xsicX6N39CGPFGRCuGaorqnOnqoPAYzdodkICCQ%3Dw1280');background-size:cover;background-position:center}
-.hero-content{padding:150px clamp(24px,10vw,140px) 82px;max-width:900px}
-.kicker{text-transform:uppercase;letter-spacing:.23em;color:#e0c995;font-size:.75rem;font-weight:700}
-h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.08}
-h1{font-size:clamp(3rem,7vw,6.6rem);margin:18px 0 20px;max-width:780px}
-.hero p{font-size:clamp(1rem,2vw,1.2rem);max-width:540px;margin:0 0 28px;color:#f3f1e9}
-.button{display:inline-block;padding:12px 20px;border:1px solid rgba(255,255,255,.7);text-decoration:none;font-size:.88rem;letter-spacing:.04em;transition:.2s}
-.button:hover{background:white;color:var(--green)}
-section{padding:clamp(58px,9vw,112px) clamp(24px,10vw,140px)}
-.intro{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,7vw,100px);align-items:start}
-h2{font-size:clamp(2.2rem,4vw,3.7rem);margin:12px 0 20px;color:var(--green)}
-.intro p{font-size:1.05rem;color:#4e584f;max-width:620px}
-.rule{height:1px;background:var(--gold);width:64px;margin:22px 0}
-.photo-band{min-height:360px;background:linear-gradient(0deg,rgba(22,36,27,.25),rgba(22,36,27,.05)),url('https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vMBinjW73QIMQvJroB9ErCt3pZlLCo4ivSoAmUYGEEsPi-lzZG_AVCGqD_zq2A19JqMvGHmIMLX8-zoujWqq_COfcjDiSE2X5xj9-QZhsRdeqd1JWO75s3kpFFkjyDJILWNfrMlqXXvTqWP4mQJPhrjnTwR4M-ERb5_JX0PDHKLiPPX-Ns4w200VZbC5Nv6KZWgg9bUJCqH71GYsrtuv1MIkpZmdDRWrMEDJRZPGA%3Dw1280');background-size:cover;background-position:center}
-.visit{background:var(--green);color:var(--cream);display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
-.visit h2{color:var(--cream)}
-.visit p{color:#d9dfd8}
-.contact{font-size:.98rem}
-.contact a{color:#f0d7a2;text-decoration:none}
-footer{padding:24px clamp(24px,10vw,140px);background:#1c2e25;color:#cbd2c9;font-size:.8rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-@media(max-width:700px){header{padding:18px 22px}.brand{font-size:.88rem}nav a{margin-left:12px;font-size:.8rem}.hero{min-height:72vh}.hero-content{padding:130px 24px 58px}.intro,.visit{grid-template-columns:1fr}.photo-band{min-height:260px}section{padding-top:58px;padding-bottom:58px}}
-@media(max-width:420px){nav a:first-child{display:none}.brand span{letter-spacing:.18em}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26382e">
+  <meta name="description" content="Toss Uvas de Mesa. Conheça nossa propriedade e nossa produção de uvas de mesa em São Luiz da Sexta Légua, Caxias do Sul, Serra Gaúcha.">
+  <title>Toss Uvas de Mesa | Serra Gaúcha</title>
+  <style>
+    :root {
+      --forest: #26382e;
+      --forest-deep: #19281f;
+      --cream: #f5f2e9;
+      --paper: #fffdf7;
+      --gold: #b49a68;
+      --ink: #252b26;
+      --muted: #657066;
+      --line: rgba(38,56,46,.18);
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.65; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topbar {
+      position: absolute; inset: 0 0 auto; z-index: 5; color: #fff;
+      border-bottom: 1px solid rgba(255,255,255,.22);
+    }
+    .nav { min-height: 88px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .logo { text-decoration: none; color: #fff; display: inline-flex; flex-direction: column; line-height: 1.1; }
+    .logo strong { font-size: 1.25rem; letter-spacing: .18em; text-transform: uppercase; }
+    .logo span { margin-top: 7px; font-size: .68rem; letter-spacing: .25em; text-transform: uppercase; }
+    .navlinks { display: flex; gap: 28px; align-items: center; }
+    .navlinks a { text-decoration: none; font-size: .88rem; color: #fff; }
+    .navlinks a:hover { color: #e7d3a7; }
+    .menu-button { display: none; border: 1px solid rgba(255,255,255,.55); background: transparent; color: #fff; padding: 9px 12px; font: inherit; }
+    .hero {
+      min-height: min(790px, 94svh); display: flex; align-items: flex-end; color: #fff;
+      background:
+        linear-gradient(90deg, rgba(18,31,23,.75) 0%, rgba(18,31,23,.38) 52%, rgba(18,31,23,.12) 100%),
+        linear-gradient(0deg, rgba(18,31,23,.55), transparent 55%),
+        url("https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=2200&q=85") center 52% / cover;
+    }
+    .hero-content { padding: 170px 0 92px; max-width: 760px; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; font-weight: 700; letter-spacing: .22em; font-size: .72rem; }
+    .hero .eyebrow { color: #e4cf9f; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.1; }
+    h1 { font-size: clamp(3.2rem, 8vw, 6.8rem); letter-spacing: -.035em; margin: 20px 0 22px; max-width: 780px; }
+    .hero p { max-width: 550px; font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,.9); margin: 0 0 32px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 12px 22px; text-decoration: none; border: 1px solid var(--gold); background: var(--gold); color: var(--forest-deep); font-size: .83rem; letter-spacing: .045em; transition: .2s ease; }
+    .button:hover { background: transparent; color: #fff; border-color: #fff; }
+    .button.outline { background: transparent; color: var(--forest); border-color: var(--forest); }
+    .button.outline:hover { background: var(--forest); color: #fff; }
+    section { padding: clamp(68px, 9vw, 118px) 0; }
+    .intro-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(34px, 8vw, 120px); align-items: start; }
+    h2 { font-size: clamp(2.35rem, 5vw, 4.4rem); color: var(--forest); margin: 15px 0 24px; letter-spacing: -.025em; }
+    .intro-copy p { color: #535d54; font-size: 1.04rem; margin: 0 0 18px; }
+    .fine-line { width: 58px; height: 2px; background: var(--gold); margin: 28px 0; }
+    .manifesto { background: var(--paper); }
+    .manifesto-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .manifesto-photo {
+      min-height: 480px;
+      background: url("https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85") center / cover;
+    }
+    .manifesto-text { padding: 20px 0; }
+    .manifesto-text p { color: var(--muted); max-width: 490px; }
+    .details { background: var(--forest); color: var(--cream); }
+    .details h2 { color: var(--cream); }
+    .details .eyebrow { color: #d7bd87; }
+    .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; margin-top: 42px; }
+    .detail { border-top: 1px solid rgba(245,242,233,.3); padding-top: 20px; }
+    .detail .number { color: #d7bd87; font-size: .72rem; letter-spacing: .16em; }
+    .detail h3 { color: #fff; font-size: 1.65rem; margin: 12px 0; }
+    .detail p { color: rgba(245,242,233,.74); font-size: .95rem; margin: 0; }
+    .contact { background: #eae5d8; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+    .contact p { color: #535d54; max-width: 520px; }
+    .contact-card { border-left: 2px solid var(--gold); padding: 8px 0 8px 28px; }
+    .contact-card p { margin: 0 0 16px; }
+    .contact-card a { text-decoration-color: var(--gold); text-underline-offset: 4px; }
+    footer { background: var(--forest-deep); color: rgba(255,255,255,.72); padding: 26px 0; font-size: .8rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; align-items: center; }
+    .footer-brand { color: #fff; letter-spacing: .13em; text-transform: uppercase; }
+    .footer-inner a { text-decoration: none; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 36px, 600px); }
+      .nav { min-height: 76px; }
+      .menu-button { display: block; }
+      .navlinks { display: none; position: absolute; top: 76px; left: 0; right: 0; background: var(--forest-deep); padding: 18px 24px 24px; flex-direction: column; align-items: flex-start; gap: 18px; }
+      .navlinks.open { display: flex; }
+      .hero { min-height: 82svh; background-position: 57% center; }
+      .hero-content { padding: 145px 0 62px; }
+      h1 { font-size: clamp(3rem, 14vw, 5rem); }
+      .intro-grid, .manifesto-inner, .contact-grid { grid-template-columns: 1fr; gap: 26px; }
+      .manifesto-photo { min-height: 300px; order: 2; }
+      .detail-grid { grid-template-columns: 1fr; gap: 26px; }
+      .detail { padding-top: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
 </head>
 <body>
-<header>
-  <div class="brand">Toss <span>Uvas de Mesa</span></div>
-  <nav><a href="#propriedade">A propriedade</a><a href="#contato">Contato</a></nav>
-</header>
-<main>
-  <section class="hero" aria-label="Nossa propriedade na Serra Gaúcha">
-    <div class="hero-content">
-      <div class="kicker">São Luiz da Sexta Légua · Serra Gaúcha</div>
-      <h1>Um local para conhecer.</h1>
-      <p>Venha nos visitar. Conheça nossa produção de uvas de mesa e leve para casa o doce sabor da Serra Gaúcha.</p>
-      <a class="button" href="#contato">Venha nos visitar</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="logo" href="#inicio" aria-label="Toss Uvas de Mesa, início">
+        <strong>Toss</strong><span>Uvas de Mesa</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="navlinks" id="menu" aria-label="Navegação principal">
+        <a href="#propriedade">A propriedade</a>
+        <a href="#cultivo">Nosso trabalho</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
-  </section>
-  <section class="intro" id="propriedade">
-    <div>
-      <div class="kicker" style="color:#8b7549">Nossa propriedade</div>
-      <h2>Da nossa terra, para a sua mesa.</h2>
-      <div class="rule"></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-content">
+          <div class="eyebrow">São Luiz da Sexta Légua · Serra Gaúcha</div>
+          <h1>Da nossa terra,<br>para a sua mesa.</h1>
+          <p>Uvas de mesa cultivadas com cuidado, tradição e respeito ao ritmo de cada safra.</p>
+          <a class="button" href="#propriedade">Conheça a Toss</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="propriedade">
+      <div class="wrap intro-grid">
+        <div>
+          <div class="eyebrow">Nossa propriedade</div>
+          <h2>Um lugar para conhecer.</h2>
+          <div class="fine-line"></div>
+        </div>
+        <div class="intro-copy">
+          <p>A Toss Uvas de Mesa é uma propriedade familiar na Serra Gaúcha, onde o trabalho com as videiras acompanha as estações e cada etapa da safra tem sua importância.</p>
+          <p>Mais do que produzir uvas, queremos compartilhar um pouco da nossa história, da nossa terra e do cuidado que existe por trás de cada colheita.</p>
+          <p>Será um prazer receber você e apresentar nosso trabalho.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="cultivo">
+      <div class="wrap manifesto-inner">
+        <div class="manifesto-text">
+          <div class="eyebrow">O cuidado em cada etapa</div>
+          <h2>Cada safra tem sua história.</h2>
+          <p>Da poda à brotação, da floração ao amadurecimento dos cachos, acompanhamos o ciclo da videira com atenção e dedicação.</p>
+          <p>É um trabalho contínuo, feito na propriedade e construído safra após safra.</p>
+          <a class="button outline" href="https://www.instagram.com/tossuvasdemesa/" target="_blank" rel="noopener noreferrer">Acompanhe nosso dia a dia</a>
+        </div>
+        <div class="manifesto-photo" role="img" aria-label="Paisagem vitivinícola"></div>
+      </div>
+    </section>
+
+    <section class="details">
+      <div class="wrap">
+        <div class="eyebrow">Da videira à colheita</div>
+        <h2>Respeito ao ciclo,<br>cuidado com os detalhes.</h2>
+        <div class="detail-grid">
+          <article class="detail">
+            <div class="number">01 / MANEJO</div>
+            <h3>Conhecer a videira</h3>
+            <p>O acompanhamento das plantas e o manejo adequado ajudam a preparar cada novo ciclo.</p>
+          </article>
+          <article class="detail">
+            <div class="number">02 / CULTIVO</div>
+            <h3>Cuidar da produção</h3>
+            <p>O trabalho diário considera as condições do vinhedo e as necessidades de cada etapa.</p>
+          </article>
+          <article class="detail">
+            <div class="number">03 / COLHEITA</div>
+            <h3>Colher com atenção</h3>
+            <p>Na colheita, o cuidado continua para que as uvas cheguem à mesa com qualidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="eyebrow">Venha nos conhecer</div>
+          <h2>Vamos conversar?</h2>
+          <p>Quer saber mais sobre nossas uvas ou entrar em contato com a propriedade? Fale conosco ou acompanhe as novidades nas redes sociais.</p>
+          <a class="button outline" href="https://www.instagram.com/tossuvasdemesa/" target="_blank" rel="noopener noreferrer">Fale com a Toss</a>
+        </div>
+        <div class="contact-card">
+          <p><strong>Localização</strong><br>São Luiz da Sexta Légua<br>Caxias do Sul · Rio Grande do Sul</p>
+          <p><strong>Instagram</strong><br><a href="https://www.instagram.com/tossuvasdemesa/" target="_blank" rel="noopener noreferrer">@tossuvasdemesa</a></p>
+          <p><strong>Como chegar</strong><br><a href="https://www.google.com/maps/search/?api=1&query=S%C3%A3o+Luiz+da+Sexta+L%C3%A9gua%2C+Caxias+do+Sul%2C+RS" target="_blank" rel="noopener noreferrer">Ver região no mapa</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span class="footer-brand">Toss Uvas de Mesa</span>
+      <span>São Luiz da Sexta Légua · Caxias do Sul, RS</span>
+      <span>© <span id="year"></span> Toss Uvas de Mesa</span>
     </div>
-    <div>
-      <p>A Toss Uvas de Mesa é um lugar para se aproximar da produção, conhecer o cuidado com as videiras e apreciar o sabor das uvas cultivadas na Serra Gaúcha.</p>
-      <p>Queremos receber você na propriedade e compartilhar um pouco do nosso trabalho e da nossa história.</p>
-    </div>
-  </section>
-  <div class="photo-band" role="img" aria-label="Paisagem da propriedade e produção de uvas"></div>
-  <section class="visit" id="contato">
-    <div>
-      <div class="kicker">Será um prazer receber você</div>
-      <h2>Venha nos visitar.</h2>
-      <p>Entre em contato para saber mais e planejar sua visita.</p>
-    </div>
-    <div class="contact">
-      <p><strong>Endereço</strong><br>São Luiz da Sexta Légua<br>Caxias do Sul · RS</p>
-      <p><strong>Telefone</strong><br><a href="tel:+555432128053">(54) 3212-8053</a></p>
-      <p><strong>E-mail</strong><br><a href="mailto:toss.uvas@gmail.com">toss.uvas@gmail.com</a></p>
-    </div>
-  </section>
-</main>
-<footer><span>© Toss Uvas de Mesa</span><span>Serra Gaúcha · Caxias do Sul, RS</span></footer>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('#menu');
+    menuButton.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
