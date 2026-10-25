@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Toss Uvas de Mesa — conheça nossa produção de uvas de mesa em São Luiz da Sexta Légua, Caxias do Sul, Serra Gaúcha.">
+<title>Toss Uvas de Mesa | Um local para conhecer</title>
+<style>
+:root{--green:#263d32;--cream:#f6f3eb;--gold:#b79b69;--ink:#202720;--muted:#687268}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+header{position:absolute;top:0;left:0;right:0;z-index:2;padding:22px clamp(20px,6vw,84px);display:flex;align-items:center;justify-content:space-between;color:white}
+.brand{font-size:1.05rem;letter-spacing:.17em;font-weight:700;text-transform:uppercase}
+.brand span{display:block;font-size:.68rem;letter-spacing:.28em;font-weight:400;margin-top:2px}
+nav a{text-decoration:none;font-size:.9rem;margin-left:24px}
+.hero{min-height:78vh;display:flex;align-items:flex-end;position:relative;color:white;background:linear-gradient(90deg,rgba(18,32,24,.72),rgba(18,32,24,.18)),linear-gradient(0deg,rgba(18,32,24,.48),transparent 65%),url('https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vXkY2TOKi2_GSiq7SwfgoRTzYJviINoXGMZnIX_ZXgNOHgCDRXXxS39rs_kz1-8hgH0DF0EZ6opXakJGeKgL-1NoxmKz8dLN0FO2QsfkDxsrHgJwHizp7X80AYDOHvtJrxV9tONalS5Wnk95nDWDXFpoU5wJiNT_XGvaO1fvUyNZkFqaARVO_dndFfES3FFWp4xsicX6N39CGPFGRCuGaorqnOnqoPAYzdodkICCQ%3Dw1280');background-size:cover;background-position:center}
+.hero-content{padding:150px clamp(24px,10vw,140px) 82px;max-width:900px}
+.kicker{text-transform:uppercase;letter-spacing:.23em;color:#e0c995;font-size:.75rem;font-weight:700}
+h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.08}
+h1{font-size:clamp(3rem,7vw,6.6rem);margin:18px 0 20px;max-width:780px}
+.hero p{font-size:clamp(1rem,2vw,1.2rem);max-width:540px;margin:0 0 28px;color:#f3f1e9}
+.button{display:inline-block;padding:12px 20px;border:1px solid rgba(255,255,255,.7);text-decoration:none;font-size:.88rem;letter-spacing:.04em;transition:.2s}
+.button:hover{background:white;color:var(--green)}
+section{padding:clamp(58px,9vw,112px) clamp(24px,10vw,140px)}
+.intro{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,7vw,100px);align-items:start}
+h2{font-size:clamp(2.2rem,4vw,3.7rem);margin:12px 0 20px;color:var(--green)}
+.intro p{font-size:1.05rem;color:#4e584f;max-width:620px}
+.rule{height:1px;background:var(--gold);width:64px;margin:22px 0}
+.photo-band{min-height:360px;background:linear-gradient(0deg,rgba(22,36,27,.25),rgba(22,36,27,.05)),url('https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vMBinjW73QIMQvJroB9ErCt3pZlLCo4ivSoAmUYGEEsPi-lzZG_AVCGqD_zq2A19JqMvGHmIMLX8-zoujWqq_COfcjDiSE2X5xj9-QZhsRdeqd1JWO75s3kpFFkjyDJILWNfrMlqXXvTqWP4mQJPhrjnTwR4M-ERb5_JX0PDHKLiPPX-Ns4w200VZbC5Nv6KZWgg9bUJCqH71GYsrtuv1MIkpZmdDRWrMEDJRZPGA%3Dw1280');background-size:cover;background-position:center}
+.visit{background:var(--green);color:var(--cream);display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.visit h2{color:var(--cream)}
+.visit p{color:#d9dfd8}
+.contact{font-size:.98rem}
+.contact a{color:#f0d7a2;text-decoration:none}
+footer{padding:24px clamp(24px,10vw,140px);background:#1c2e25;color:#cbd2c9;font-size:.8rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:700px){header{padding:18px 22px}.brand{font-size:.88rem}nav a{margin-left:12px;font-size:.8rem}.hero{min-height:72vh}.hero-content{padding:130px 24px 58px}.intro,.visit{grid-template-columns:1fr}.photo-band{min-height:260px}section{padding-top:58px;padding-bottom:58px}}
+@media(max-width:420px){nav a:first-child{display:none}.brand span{letter-spacing:.18em}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Toss <span>Uvas de Mesa</span></div>
+  <nav><a href="#propriedade">A propriedade</a><a href="#contato">Contato</a></nav>
+</header>
+<main>
+  <section class="hero" aria-label="Nossa propriedade na Serra Gaúcha">
+    <div class="hero-content">
+      <div class="kicker">São Luiz da Sexta Légua · Serra Gaúcha</div>
+      <h1>Um local para conhecer.</h1>
+      <p>Venha nos visitar. Conheça nossa produção de uvas de mesa e leve para casa o doce sabor da Serra Gaúcha.</p>
+      <a class="button" href="#contato">Venha nos visitar</a>
+    </div>
+  </section>
+  <section class="intro" id="propriedade">
+    <div>
+      <div class="kicker" style="color:#8b7549">Nossa propriedade</div>
+      <h2>Da nossa terra, para a sua mesa.</h2>
+      <div class="rule"></div>
+    </div>
+    <div>
+      <p>A Toss Uvas de Mesa é um lugar para se aproximar da produção, conhecer o cuidado com as videiras e apreciar o sabor das uvas cultivadas na Serra Gaúcha.</p>
+      <p>Queremos receber você na propriedade e compartilhar um pouco do nosso trabalho e da nossa história.</p>
+    </div>
+  </section>
+  <div class="photo-band" role="img" aria-label="Paisagem da propriedade e produção de uvas"></div>
+  <section class="visit" id="contato">
+    <div>
+      <div class="kicker">Será um prazer receber você</div>
+      <h2>Venha nos visitar.</h2>
+      <p>Entre em contato para saber mais e planejar sua visita.</p>
+    </div>
+    <div class="contact">
+      <p><strong>Endereço</strong><br>São Luiz da Sexta Légua<br>Caxias do Sul · RS</p>
+      <p><strong>Telefone</strong><br><a href="tel:+555432128053">(54) 3212-8053</a></p>
+      <p><strong>E-mail</strong><br><a href="mailto:toss.uvas@gmail.com">toss.uvas@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+<footer><span>© Toss Uvas de Mesa</span><span>Serra Gaúcha · Caxias do Sul, RS</span></footer>
+</body>
+</html>
